@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+.video-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: clamp(20px, 5vw, 36px);
+    color: aliceblue;
+    gap: 24px;
+    padding: 40px 20px;
+}
+
+#source-video {
+    display: none; /* Прячем оригинал */
+}
+
+.video-slice {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    width: auto; /* 🔥 адаптивная ширина */
+    height: clamp(10px, 5vw, 20px);
+    vertical-align: middle;
+    background: #222; /* просто чтоб видно было границу */
+}
+
+.video-text p {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    margin: 0;
+}
+
+.slice-1 {
+    width: clamp(60px, 10vw, 120px);
+}
+
+.slice-2 {
+    width: clamp(40px, 6vw, 90px);
+}
+
+.slice-3 {
+    width: clamp(50px, 8vw, 100px);
+}
+
+.slice-4 {
+    width: clamp(100px, 23vw, 220px);
+}
+
+
